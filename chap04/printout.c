@@ -9,7 +9,10 @@ int main(void)
 	float pies = 12.75;
 	int cost = 7800;
 
-	printf()
+	printf("The %d contestants ate %f berry pies.\n", number, pies);
+	printf("The value of pi is %f.\n", PI);
+	printf("Farewell, your are too dear for my possessing,\n");
+	printf("%c%d\n", '$', cost);
 
 	return 0;
 }
