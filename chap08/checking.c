@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdbool.h>
 
-long get_long(long begin, long end, long low, long high);
+long get_long(void);
 bool bad_limits(long begin, long end, long low, long high);
 double sum_squares(long a, long b);
 
@@ -26,7 +26,7 @@ int main(void)
 			printf("Please try again.\n");
 		else
 		{
-			answer = sum_square(start, stop);
+			answer = sum_squares(start, stop);
 			printf("The sum of the squares of the integers from %ld to %ld "
 				"is %g\n", start, stop, answer);
 		}
@@ -49,9 +49,9 @@ long get_long(void)
 	while (scanf("%ld", &input) != 1)
 	{
 		while ((ch = getchar()) != '\n')
-			putchar();
+			putchar(ch);
 		printf(" is not an integer.\n"
-			"Please enter an integer value, such as 25, -178, or 3: ")
+			"Please enter an integer value, such as 25, -178, or 3: ");
 	}
 
 	return input;
@@ -68,4 +68,25 @@ double sum_squares(long a, long b)
 	return total;
 }
 
+bool bad_limits(long begin, long end, long low, long high)
+{
+	bool not_good = false;
 
+	if (begin > end)
+	{
+		printf("%ld isn't smaller than %ld.\n", begin, end);
+		not_good = true;
+	}
+	if (begin < low || end < low)
+	{
+		printf("Values must be %ld or greater.\n", low);
+		not_good = true;
+	}
+	if (begin > high || end > high)
+	{
+		printf("Values must be %ld or less.\n", high);
+		not_good = true;
+	}
+
+	return not_good;
+}
