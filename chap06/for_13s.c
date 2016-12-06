@@ -1,11 +1,10 @@
-#include<stdio.h>
-
+/* for_13s.c */
+#include <stdio.h>
 int main(void)
 {
-	int n;		// count by 13s for 2
-
-	for (n = 2; n < 60; n += 13)
-		printf("%d \n", n);
-
-	return 0;
+    int n;        // count by 13s from 2
+    
+    for (n = 2;  n < 60; n = n + 13)
+        printf("%d \n", n);
+    return 0;
 }
