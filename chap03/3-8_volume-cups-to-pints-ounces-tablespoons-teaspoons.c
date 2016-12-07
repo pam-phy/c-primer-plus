@@ -3,17 +3,17 @@
 int main(void)
 {
 
-	float volume_pints, volume_cups, volume_ounces, volume_tablespoons, volume_teaspoons;
+	float pint, cup, ounce, tablespoon, teaspoon;
 
 	printf("Enter a volume in cups: ");
-	scanf("%f", &volume_cups);
+	scanf("%f", &cup);
 
-	volume_pints = volume_cups / 2;
-	volume_ounces = volume_cups * 8;
-	volume_tablespoons  = volume_ounces * 2;
-	volume_teaspoons = volume_tablespoons * 3;
+	pint = cup / 2;
+	ounce = cup * 8;
+	tablespoon  = ounce * 2;
+	teaspoon = tablespoon * 3;
 
-	printf("The volume is equivalent to %f pints, or %f ounces, or %f tablespoons, or %f teaspoons.\n", volume_pints, volume_ounces, volume_tablespoons, volume_teaspoons);
+	printf("The volume is equivalent to %f pints, or %f ounces, or %f tablespoons, or %f teaspoons.\n", pint, ounce, tablespoon, teaspoon);
 
 	return 0;
 }
