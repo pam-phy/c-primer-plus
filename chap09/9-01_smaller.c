@@ -3,16 +3,18 @@ double dmin(double x, double y);
 
 int main(void)
 {
-	double x, y;
-
-	printf("Please enter two number:");
-	scanf("%f%f", &x, &y);
-	printf("The smaller one of %f and %f is %f.\n", x, y, dmin(x, y));
+	printf("The smaller one of 12.3 and 68 is %f.\n", dmin(12.3, 68));
 
 	return 0;
 }
 
 double dmin(double x, double y)
 {
-	return (x < y) ? x : y;
+	double min;
+
+	min = x;
+	if (x > y)
+		min = y;
+
+	return min;
 }
