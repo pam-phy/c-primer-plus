@@ -1,8 +1,8 @@
-/* strptr.c -- strings as pointers */
-#include <stdio.h>
+#include<stdio.h>
+
 int main(void)
 {
-    printf("%s, %p, %c\n", "We", "are", *"space farers");
-    
-    return 0;
+	printf("%s, %p, %c\n", "We", "are", *"space father");
+
+	return 0;
 }
