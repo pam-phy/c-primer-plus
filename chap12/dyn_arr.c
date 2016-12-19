@@ -21,7 +21,7 @@ int main(void)
 		exit(EXIT_FAILURE);
 	}
 	puts("Enter the values (q to quit):");
-	while (i < max && scanf("%1f", &ptd[i]) == 1)
+	while (i < max && scanf("%lf", &ptd[i]) == 1)
 		++i;
 	printf("Here are your %d entries:\n", number = i);
 	for (i = 0; i < number; i++)
