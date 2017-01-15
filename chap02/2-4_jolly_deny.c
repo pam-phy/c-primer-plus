@@ -6,14 +6,14 @@ void deny(void);
 int main(void)
 {
 	printf("For he is a ");
-		jolly();
-		printf(" fellow!\n");
-        printf("For he is a ");
-        	jolly();
-	        printf(" fellow!\n");
-        printf("For he is a ");
-        	jolly();
- 	       printf(" fellow!\n");
+	jolly();
+	printf(" fellow!\n");
+	printf("For he is a ");
+	jolly();
+	printf(" fellow!\n");
+	printf("For he is a ");
+	jolly();
+	printf(" fellow!\n");
 	deny();
 
 	return 0;

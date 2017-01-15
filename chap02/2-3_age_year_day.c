@@ -2,11 +2,11 @@
 
 int main(void)
 {
-	int ageyears, agedays;
+	int age_years, age_days;
 
-	ageyears = 25;
-	agedays = 365 * ageyears;
-	printf("My age is %d years, or %d days.\n", ageyears, agedays);
+	age_years = 20;
+	age_days = 365 * age_years;
+	printf("My age is %d years, or %d days.\n", age_years, age_days);
 
 	return 0;
 }
