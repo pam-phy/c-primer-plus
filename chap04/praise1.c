@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define PRAISE "You are ab extraordinary being."
+#define PRAISE "You are an extraordinary being."
 
 int main(void)
 {
