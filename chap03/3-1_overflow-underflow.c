@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<limits.h>
 #include<float.h>
-
+1
 int main(void)
 {
 	int n = INT_MAX;
