@@ -1,19 +1,19 @@
 #include<stdio.h>
 
-float cube(float n);
+double cube(double num);
 
 int main(void)
 {
-	float num;
+	double num;
 
 	printf("Please enter a number: ");
-	scanf("%f", &num);
+	scanf("%lf", &num);
 	printf("num * num * num = %.1f\n", cube(num));
 
 	return 0;
 }
 
-float cube(float n)
+double cube(double n)
 {
 	return n * n * n;
 }
