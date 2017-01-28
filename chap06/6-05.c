@@ -2,14 +2,15 @@
 
 int main(void)
 {
-	int row, col;
+	int row, col, n;
 	char ch;
 
-//	printf("Enter a character: ");
-//	scanf("%c", &ch);
-	for (row = 1; row <= 5; row++)
+	printf("Please enter a character: ");
+	scanf("%c", &ch);
+	n = ch - 'A' + 1;
+	for (row = 1; row <= n; row++)
 	{
-		for (col = 5; col > row; col-- )
+		for (col = n; col > row; col-- )
 		{
 			printf(" ");
 		}
