@@ -24,7 +24,7 @@ int main(void)
 		total += subtot;
 	}
 	printf("\nThe yearly average is %.1f inches.\n\n", total / YEARS);
-	printf("MONTHLY AVERAGE:\n\n");
+	printf("MONTHLY AVERAGES:\n\n");
 	printf(" Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct ");
 	printf(" Nov  Dec\n");
 	
