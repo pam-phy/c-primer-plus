@@ -1,21 +1,33 @@
 #include<stdio.h>
-int imax(int * value, int n);
+#define SIZE 5
+
+int imax(int * ptr, int n);
 
 int main(void)
 {
-	int * value;
+	int i;
+	int input[SIZE];
 
+	printf("Enter %d integers: ", SIZE);
+	for (i = 0; i < SIZE; i++);
+		scanf("%d", &input[i]);
+	printf("The integers read in are:\n");
+	for (i = 0; i < SIZE; i++)
+		printf(" %5d", input[i]);
+	printf("\n");
+	printf("The biggest one is %d\n", imax(input, SIZE));
 
 	return 0;
 }
 
-int imax(int * value, int n)
+int imax(int ptr[], int n)
 {
 	int i;
-	int max = 0;
+	int max;
 
+	max = ptr[0];
 	for (i = 0; i < n; i++)
-		max = (max > *(value+ i)) ? max : *(value + i);
+		max = (max > ptr[i]) ? max : ptr[i];
 
 	return max;
 }
