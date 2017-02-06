@@ -13,7 +13,7 @@ int main(void)
 		scanf("%d", &input[i]);
 	printf("The integers read in are:\n");
 	for (i = 0; i < SIZE; i++)
-		printf(" %5d", input[i]);
+		printf("%10d", input[i]);
 	printf("\n");
 	printf("The biggest one is %d\n", imax(input, SIZE));
 
