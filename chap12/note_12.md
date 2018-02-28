@@ -6,8 +6,14 @@ Data are stored in memory.
 
 An object could be described in terms of its storage duration, which is how long it stay in the memory.
 
-作用域 (Scope)：表示程序可以在哪个区域使用标识符。
+### 作用域 (Scope)
+
+表示程序可以在哪个区域使用标识符。
 * block scope
 * function scope
 * function prototype scope
 * file scope
+
+### 链接 (Linkage)
+
+### 存储期 (Storage duration)
