@@ -1,4 +1,5 @@
-##
+
+## 存储类别 (Storage Class)
 
 Data are stored in memory.
 * hardware aspect: each stored value occupies physical memory call object. An object can hold one or more values.
