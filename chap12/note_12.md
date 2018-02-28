@@ -5,3 +5,9 @@ Data are stored in memory.
 * software aspect: the prorgam needs a way to access the object. 
 
 An object could be described in terms of its storage duration, which is how long it stay in the memory.
+
+作用域 (Scope)：表示程序可以在哪个区域使用标识符。
+* block scope
+* function scope
+* function prototype scope
+* file scope
