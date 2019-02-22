@@ -5,15 +5,9 @@ void deny(void);
 
 int main(void)
 {
-	printf("For he is a ");
 	jolly();
-	printf(" fellow!\n");
-	printf("For he is a ");
 	jolly();
-	printf(" fellow!\n");
-	printf("For he is a ");
 	jolly();
-	printf(" fellow!\n");
 	deny();
 
 	return 0;
@@ -21,7 +15,7 @@ int main(void)
 
 void jolly(void)
 {
-	printf("jolly good");
+	printf("For he is a jolly good fellow!\n");
 }
 
 void deny(void)
