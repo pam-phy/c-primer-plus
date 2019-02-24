@@ -8,6 +8,7 @@ int main(void)
 	printf("Convert days to weeks and days!\n");
 	printf("Please enter the number days (<= 0 to quit):\n");
 	scanf("%d", &day);
+
 	while (day > 0)
 	{
 		week = day / D_PER_W;
