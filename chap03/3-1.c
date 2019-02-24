@@ -13,8 +13,8 @@ int main(void)
 	printf("INT_MAX + 1 = %+d\n", n + 1);
 	printf("INT_MAX + 2 = %+d\n", n + 2);
 	printf("FLT_MAX        = %+f\n", f1);
-	printf("FLT_MAX + 10.0 = %+f\n", f1 + 10.0);
-	printf("FLT_MAX + 20.0 = %+f\n", f1 + 20.0);
+	printf("FLT_MAX * 10.0 = %+f\n", f1 * 10.0);
+	printf("FLT_MAX * FLT_MAX = %+f\n", f1 * f1);
 	printf("%f + 2.0 - %f = %f\n", f2, f2, f3 - f2);
 
 	return 0;
